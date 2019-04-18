@@ -3,7 +3,7 @@
 
 # This is a visualization I made in the Codecademy Data Science Path with a dataset from <a href = "https://www.kaggle.com/fkosmowski/kivadhsv1" target = "_blank">Kaggle</a>. The dataset contains information about loans awarded by the non-profit <a href = "https://www.kiva.org/" target = "_blank">Kiva</a>. 
 
-# In[29]:
+# In[1]:
 
 
 #First we import what we need for the analysis and visualization.
@@ -12,21 +12,21 @@ import pandas as pd
 import seaborn as sns
 
 
-# In[30]:
+# In[2]:
 
 
 #We read in the data from Kaggle (which I learned of thru Codecademy)
 df = pd.read_csv("kiva_data.csv")
 
 
-# In[31]:
+# In[3]:
 
 
 #Now we just want to get a sense of the data frame.
 df.head(10)
 
 
-# In[34]:
+# In[4]:
 
 
 # Creates the figure, note: you're only using this syntax so that you can modify the y-axis ticks later
@@ -38,7 +38,7 @@ ax.set(title='Kiva Loan Info',xlabel='Country', ylabel='Loan Amount')
 plt.show()
 
 
-# In[35]:
+# In[5]:
 
 
 #We can bring this in to format the y ticks.
@@ -62,7 +62,7 @@ ax.set(title='Kiva Loan Info',xlabel='Country', ylabel='Loan Amount')
 plt.show()
 
 
-# In[26]:
+# In[6]:
 
 
 #We are now going to bring down the code from above, but add a hue for gender. This will\
@@ -78,7 +78,7 @@ ax.set(title='Gender Disparity',xlabel='Country', ylabel='Loan Amount')
 plt.show()
 
 
-# In[27]:
+# In[7]:
 
 
 #I'm now going to change the colors a bit.
@@ -110,7 +110,7 @@ plt.ylabel("Loan Amount")
 plt.show()
 
 
-# In[28]:
+# In[8]:
 
 
 #Let's check what the distribution of the data might be using boxplots.
@@ -126,7 +126,7 @@ plt.show()
 
 # You can really see how stark the divide is in Cambodia and Pakistan. 
 
-# In[36]:
+# In[9]:
 
 
 #We can apply new styling, change the figure size, and add the 'split = True' command to try
