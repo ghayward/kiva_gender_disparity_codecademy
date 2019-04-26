@@ -59,6 +59,9 @@ ax.yaxis.set_major_formatter(tick)
 #Just cleaning up the axes and the title.
 ax.set(title='Kiva Loan Info',xlabel='Country', ylabel='Loan Amount')
 
+#Let's save an image
+plt.savefig('kiva_loan_info_general.png')
+
 plt.show()
 
 
@@ -75,6 +78,7 @@ fmt = '${x:,.0f}'
 tick = mtick.StrMethodFormatter(fmt)
 ax.yaxis.set_major_formatter(tick)
 ax.set(title='Gender Disparity',xlabel='Country', ylabel='Loan Amount')
+plt.savefig('kiva_loan_gender_disparity.png')
 plt.show()
 
 
@@ -107,6 +111,7 @@ plt.xlabel("Country")
 plt.ylabel("Loan Amount")
 
 #seems not to be needed in Jupyter Notebooks, where I wrote this, but cleans it up:
+plt.savefig('kiva_loan_info_general_redblueformatted.png')
 plt.show()
 
 
@@ -121,6 +126,7 @@ sns.boxplot(data=df, x="country", y="loan_amount", hue="gender")
 plt.title("Gender Disparity")
 plt.xlabel("Country")
 plt.ylabel("Loan Amount")
+plt.savefig('kiva_loan_gender_disparity_boxplots.png')
 plt.show()
 
 
@@ -139,6 +145,7 @@ sns.violinplot(data=df, x="country", y="loan_amount", hue= 'gender', split=True)
 plt.title("Gender Disparity")
 plt.xlabel("Country")
 plt.ylabel("Loan Amount")
+plt.savefig('kiva_loan_gender_disparity_violinplots.png')
 plt.show()
 
 
